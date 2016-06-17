@@ -5,7 +5,7 @@ It has next structure
 -------
 ```yaml
 modules				#put your own custom modules here
-librarie			#put your own custom libraries here
+libraries			#put your own custom libraries here
 scripts				#deploy related scripts
   deploy_init.sh		#init script. It will be executed only if {deploy_dir} is empty
   drupal_install.sh		#download via drush Drupal and install it
