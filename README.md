@@ -1,4 +1,4 @@
-# drupal-starter-kit
+# drupal-8-starter-kit
 Repository contain integration scripts to start using deploy via ZenCI for DrupalCMS website
 
 It has next structure
@@ -32,26 +32,26 @@ github:
     drupal-starter-kit:	#your repository get cloned here
       modules: 				# your own modules
       themes: 				# your own themes
-      libraries: 				# your own libraries
+      libraries: 			# your own libraries
 ```
 
 Your **DOCROOT** will have full drupal code structure with next extra:
 
-- **sites/all/modules**:
+- **/modules**:
 
 ```textile
 contrib 
 custom -> ~/github/YOURNAME/drupal-starter-kit/master/modules
 ```
 
-- **sites/all/themes**:
+- **/themes**:
 
 ```textile
 contrib 
 custom -> ~/github/YOURNAME/drupal-starter-kit/master/themes
 ```
 
-- **sites/all/libraries**:
+- **/libraries**:
 
 ```textile
 contrib 
