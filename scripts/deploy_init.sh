@@ -35,7 +35,7 @@ done
 if [ "$DEFAULT_THEME" != "" ]; then
   echo "Set default theme"
   drush -y en $DEFAULT_THEME
-  drush cset system.theme default $DEFAULT_THEME
+  drush -y cset system.theme default $DEFAULT_THEME
 fi
 
 if [ "$ENABLE_DEVEL" != "" ]; then
