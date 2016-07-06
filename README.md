@@ -29,7 +29,7 @@ themes						# put your own custom themes here
 ```yaml
 github:
   YOURNAME:
-    drupal-starter-kit:	#your repository get cloned here
+    drupal-starter-kit:		# your repository get cloned here
       modules: 				# your own modules
       themes: 				# your own themes
       libraries: 			# your own libraries
@@ -41,28 +41,28 @@ Your **DOCROOT** will have full drupal code structure with next extra:
 
 ```textile
 contrib 
-custom -> ~/github/YOURNAME/drupal-starter-kit/master/modules
+custom -> ~/github/YOURNAME/drupal-8-starter-kit/master/modules
 ```
 
 - **/themes**:
 
 ```textile
 contrib 
-custom -> ~/github/YOURNAME/drupal-starter-kit/master/themes
+custom -> ~/github/YOURNAME/drupal-8-starter-kit/master/themes
 ```
 
 - **/libraries**:
 
 ```textile
 contrib 
-custom -> ~/github/YOURNAME/drupal-starter-kit/master/libraries
+custom -> ~/github/YOURNAME/drupal-8-starter-kit/master/libraries
 ```
 
 Credits
 -------
 
 - [DrupalCMS](https://drupal.org)
-- [HowTO](http://docs.zen.ci/deploy/deploy-drupal-7x)
+- [HowTO](http://docs.zen.ci/Deploy/Deploy%20Drupal%207.x)
 
 
 License
