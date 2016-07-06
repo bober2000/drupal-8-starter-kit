@@ -18,4 +18,4 @@ for file in `ls $UPDATEDIR|grep sh$|grep -vf $STATUSFILE`;do
 done
 
 # clean cache
-drush cc all
+drush cache-rebuild
