@@ -3,7 +3,7 @@
 
 echo "Install script started"
 
-CORE='drupal-7.x'
+CORE='drupal-8.x'
 
 echo "Full site path: $DOCROOT"
 echo "Site core: $CORE"
