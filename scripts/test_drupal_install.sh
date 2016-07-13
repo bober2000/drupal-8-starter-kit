@@ -11,7 +11,7 @@ echo "Site core: $CORE"
 cd $DOCROOT
 
 echo "Download DRUPAL."
-
+drush --version
 drush dl $CORE --drupal-project-rename="drupal" --package-handler=git_drupalorg
 rsync -a $DOCROOT/drupal/ $DOCROOT
 rm -rf drupal
