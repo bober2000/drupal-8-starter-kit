@@ -40,4 +40,3 @@ test:
         init: '{deploy_dir}/scripts/test_deploy_init.sh'
       tests:
         - '{deploy_dir}/scripts/drupal_tests.php'
-    
