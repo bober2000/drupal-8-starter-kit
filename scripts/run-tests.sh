@@ -317,7 +317,7 @@ function simpletest_script_init($server_software) {
   }
 
   define('DRUPAL_ROOT', getenv('DOCROOT'));
-  require_once DRUPAL_ROOT . 'core/includes/bootstrap.inc';
+  require_once DRUPAL_ROOT . '/core/includes/bootstrap.inc';
 }
 
 /**
