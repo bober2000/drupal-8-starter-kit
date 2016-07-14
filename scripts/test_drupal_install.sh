@@ -14,7 +14,7 @@ echo "Download DRUPAL."
 drush dl $CORE --drupal-project-rename="drupal"
 rsync -a $DOCROOT/drupal/ $DOCROOT
 rm -rf drupal
-composer update
+composer self-update
 
 echo "Installing $CORE to " . $DOCROOT
 
