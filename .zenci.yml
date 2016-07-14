@@ -19,4 +19,24 @@ deploy:
     scripts:
       init: '{deploy_dir}/scripts/deploy_init.sh'
       after: '{deploy_dir}/scripts/deploy_update.sh'
-
+test:
+  php70:
+    branch:
+      box: 'octo-leam-php70'
+      dir: '{home}/github'
+      env_vars:
+        docroot: '{home}/www'
+        domain: 'localhost'
+        database_name: 'test'
+        database_user: 'test'
+        database_pass: ''
+        account_user: admin
+        account_mail: admin@zen.ci
+        account_pass: admin
+        site_mail: noreply@zen.ci
+        site_name: 'branch {branch} tests for {repo_owner}/{repo_name}'
+        tests: '--all'
+      scripts:
+        init: '{deploy_dir}/scripts/test_deploy_init.sh'
+      tests:
+        - '{deploy_dir}/scripts/drupal_tests.php'
