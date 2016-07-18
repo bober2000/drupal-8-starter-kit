@@ -11,16 +11,6 @@ $home = getenv('DOCROOT');
 $deploy_dir = getenv('ZENCI_DEPLOY_DIR');
 chdir($home);
 
-/*
- * TableSortTests are failing if theme_registry get called by l() function in
- * modules/simpletest/tests/tablesort.test:60
- *
- * $this->verbose(strtr('$ts: <pre>!ts</pre>', array('!ts' => check_plain(var_export($ts, TRUE)))));
- *
- * To fix false failure, disable theme for links for this test.
- */
-exec('drush vset theme_link 0');
-
 $data = array(
   'state' => 'pending',
   'message' => 'Processing Tests',
@@ -34,7 +24,7 @@ if(empty($tests)) {
   $tests = '--all';
 }
 
-$cmd = 'php ' . $deploy_dir . '/scripts/run-tests.sh --url http://localhost --verbose --concurrency 10 --color --summary /tmp/summary ' .$tests;
+$cmd = 'php ' . $deploy_dir . '/core/scripts/run-tests.sh --url http://localhost --verbose --concurrency 10 --color --summary /tmp/summary ' .$tests;
 
 $proc = popen($cmd, 'r');
 
