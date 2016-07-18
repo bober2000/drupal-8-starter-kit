@@ -24,7 +24,7 @@ if(empty($tests)) {
   $tests = '--all';
 }
 
-$cmd = 'php ' . $home . '/core/scripts/run-tests.sh --url http://localhost --verbose --concurrency 10 --color --summary /tmp/summary ' .$tests;
+$cmd = 'php ' . $home . '/core/scripts/run-tests.sh --url http://localhost --verbose --concurrency 10 --color ' .$tests. '> /tmp/summary';
 
 $proc = popen($cmd, 'r');
 
