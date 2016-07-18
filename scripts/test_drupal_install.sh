@@ -3,7 +3,7 @@
 
 echo "Install script started"
 
-CORE='drupal-8.1.6'
+CORE='drupal-8.0.5'
 
 echo "Full site path: $DOCROOT"
 echo "Site core: $CORE"
@@ -14,7 +14,7 @@ echo "Download DRUPAL."
 drush dl $CORE --drupal-project-rename="drupal"
 rsync -a $DOCROOT/drupal/ $DOCROOT
 rm -rf drupal
-sudo composer self-update
+
 
 echo "Installing $CORE to " . $DOCROOT
 
